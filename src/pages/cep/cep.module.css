@@ -1,0 +1,83 @@
+.container{
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.container .content{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .search{
+    display: flex;
+    align-items: center;
+}
+.container .content .search input{
+    border-radius: 8px 0px 0px 8px;
+    height: 3rem;
+    width: 20rem;
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem;
+    border-right: 0px;
+}
+.container .content .search input::placeholder{
+    margin-left: 2rem;
+}
+.container .content .search button{ 
+    cursor: pointer;
+    border-left: 0px;
+    border-radius: 0px 8px 8px 0px;
+    height: 3rem;
+    width: 5rem;
+    background: #222;
+    color: white;
+    transition: .5s;
+}
+.container .content .search button:hover{ 
+    color: #ffbb33;
+}
+
+.result{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.fields{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fields div{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;  
+    width: 20rem;
+}
+.fields div span{
+    width: 100%; 
+    font-size: 1.2rem;  
+}
+.fields div input{
+    width: 100%; 
+    font-size: 1rem;  
+    padding: 0.2rem;
+}
+
+@media(max-width:900px){
+    .container .content .search input{
+        width: 10rem; 
+    }
+}

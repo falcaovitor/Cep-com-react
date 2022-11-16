@@ -1,0 +1,33 @@
+.nav_container{
+    background-color: #222;
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+h2 a{
+    margin-left: 5rem;
+    color: white;
+    font-size: 2.0rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+h2:hover{
+    color: #ffbb33; 
+}
+
+.icon{
+    cursor: pointer;
+    margin-right: 5rem;
+    color: white;
+    font-size: 3rem;
+    transition: .5s;
+}
+
+.icon:hover{
+    color: #ffbb33;    
+}

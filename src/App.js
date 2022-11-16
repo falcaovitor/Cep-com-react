@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+//Components
+import Nav from './components/Navbar/NavBar';
+import Container from './components/Container/Container';
+import Footer from './components/Footer/Footer';
+//Pages  
+import Home from './pages/Home/Home';
+import Cep from './pages/cep/cep';
 
 function App() {
+  function Error(){
+    return <h3>Error</h3>
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Nav/>
+        <Container customClass="min-height">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/cep" element={<Cep /> }/>
+            <Route path="*" element={<Error />}/>
+          </Routes>
+        </Container>
+      <Footer/>
+    </BrowserRouter>
   );
 }
 
