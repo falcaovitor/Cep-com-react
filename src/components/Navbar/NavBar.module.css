@@ -31,3 +31,12 @@ h2:hover{
 .icon:hover{
     color: #ffbb33;    
 }
+
+@media(max-width:900px){
+    h2 a{
+        margin-left: 2rem;
+    }
+    .icon{
+        margin-right: 2rem;
+    }
+}
