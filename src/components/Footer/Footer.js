@@ -9,7 +9,7 @@ function Footer(){
                 <div className={styles.icons}>
                     <a href="https://www.facebook.com/vitor.falcao.980" target="about_blanbk"><AiOutlineFacebook/></a>
                     <a href="https://github.com/falcaovitor" target="about_blanbk"><AiFillGithub/></a>
-                    <a href="#"><AiOutlineInstagram/></a>
+                    <a href="https://github.com/falcaovitor"><AiOutlineInstagram/></a>
                 </div>
             </div>
         </footer>
